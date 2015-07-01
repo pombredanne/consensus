@@ -1,5 +1,5 @@
 # Consensus
-A signed list of hashes of projects that are otherwise not distributed securely.
+A signed list of hashes of downloads that are otherwise not distributed securely.
 
 There exist many valuable projects that, unfortunately, are not distributed in a secure way.
 Using the downloads from these projects is scary, because it is not possible to verify your download. 
