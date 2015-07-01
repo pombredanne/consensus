@@ -20,7 +20,7 @@ Once you have the key imported into gpg, run the following command: ```gpg --ver
 If the gpg signature checks out, and the sha256 hash of your download matches the one in our consensus, then this is of course NO GUARANTEE that your download is not malicious. However, it does provide an indicate that there is some consensus about what files are being distributed, and that you have the same files as everyone else.
 
 ### My favorite insecurely distributed application is not in the list!
-You are *encouraged* to add additional projects to our list. You can do so by filing an issue linking to the project or, better yet, editing consensus_list.py and creating a pull request.
+You are *encouraged* to add additional projects to our list. You can do so by filing an issue linking to the project or, better yet, editing consensus_list.py and creating a pull request (please respect the alphabetical order).
 Projects can be added, only if they do not provide a secure distribution method. Uploading a public signing key that can only be downloaded from the same http-only website is not a secure distribution method.
 ### How do I help?
 See above question on how to provide quick, immidiate help. Another usefull feature would be for me to download the files X times from different tor exit nodes, and make sure the hashes of all of these are the same. Similarly, it would be usefull to download the list once, then check if the hashes are the same a month later. Also, the list will need some updates from time to time. 
