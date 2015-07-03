@@ -3,6 +3,7 @@ from consensus_list import consensus_list
 from urllib.request import urlopen, ProxyHandler, build_opener, install_opener
 from hashlib import sha256
 from datetime import datetime
+import os
 
 install_opener(build_opener(ProxyHandler({'http': '127.0.0.1:8118'})))
 
@@ -25,3 +26,6 @@ with open('consensus_hashes.txt', 'w') as f:
 		except:
 			print("FAILED to download " + filename + " at: " + url)
 			print(filename + " is NOT in the consensus.")
+
+os.system("gpg --clearsign consensus_hashes.txt")
+
