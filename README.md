@@ -22,5 +22,7 @@ If the gpg signature checks out, and the sha256 hash of your download matches th
 ### My favorite insecurely distributed application is not in the list!
 You are *encouraged* to add additional projects to our list. You can do so by filing an issue linking to the project or, better yet, editing consensus_list.py and creating a pull request (please respect the alphabetical ordering).
 Projects can be added, only if they do not provide a secure distribution method. Uploading a public signing key that can only be downloaded from the same http-only website is not a secure distribution method.
+### How do I create my own consensus?
+With consensus_list.py in the same folder, type```python3 consensus.py```
 ### How do I help?
 See above question on how to provide quick, immidiate help. Another usefull feature would be for me to download the files X times from different tor exit nodes, and make sure the hashes of all of these are the same. Similarly, it would be usefull to download the list once, then check if the hashes are the same a month later. Also, the list will need some updates from time to time. 
